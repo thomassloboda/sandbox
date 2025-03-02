@@ -1,0 +1,19 @@
+version = 1
+
+[[analyzers]]
+name = "javascript"
+
+[analyzers.meta]
+environment = [
+    "browser",
+    "vitest"
+]
+
+[[analyzers]]
+name = "docker"
+
+[analyzers.meta]
+dockerfile_paths = ["./Dockerfile"]
+
+[[analyzers]]
+name = "test-coverage"
