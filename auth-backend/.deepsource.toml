@@ -1,7 +1,12 @@
 version = 1
+test_patterns = [
+    "./**/*.spec.ts",
+    "./**/*.test.ts"
+]
 
 [[analyzers]]
 name = "javascript"
+enable = true
 
 [analyzers.meta]
 environment = [
@@ -11,12 +16,11 @@ environment = [
 
 [[analyzers]]
 name = "docker"
+enable = false
 
 [analyzers.meta]
 dockerfile_paths = ["./Dockerfile"]
 
 [[analyzers]]
-name = "test-coverage"
-
-[[analyzers]]
 name = "sql"
+enable = false

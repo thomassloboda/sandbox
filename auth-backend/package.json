@@ -1,0 +1,37 @@
+{
+  "name": "@thomassloboda/sandbox-auth-backend",
+  "version": "0.0.1",
+  "description": "Sandbox authentication backend",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "vitest --run --coverage -c ./vitest.config.ts",
+    "test:watch": "vitest --watch --coverage -c ./vitest.config.ts",
+    "eslint:fix": "eslint --fix .",
+    "prettier:write": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomassloboda/sandbox.git"
+  },
+  "keywords": [
+    "sandbox",
+    "authentication",
+    "backend",
+    "nodejs"
+  ],
+  "author": "Thomas SLOBODA <thomas@sloboda.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomassloboda/sandbox/issues"
+  },
+  "homepage": "https://github.com/thomassloboda/sandbox#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "@vitest/coverage-v8": "^3.0.7",
+    "eslint": "^9.21.0",
+    "prettier": "^3.5.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7"
+  }
+}
